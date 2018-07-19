@@ -14,6 +14,15 @@ public class UserDto {
     private String id;
     private java.sql.Date birthday;
     private Date createGmt;
+    private String loc;
+
+    public String getLoc() {
+        return loc;
+    }
+
+    public void setLoc(String loc) {
+        this.loc = loc;
+    }
 
     public String getUserName() {
         return userName;
