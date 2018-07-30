@@ -15,9 +15,9 @@ import java.io.IOException;
  * @create: 2018-07-07 19:46
  **/
 public class DecryptAndEncryptFilter extends OncePerRequestFilter {
+
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
 
     }
-
 }

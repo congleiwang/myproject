@@ -8,12 +8,6 @@
 
     <context:component-scan base-package="wang.conglei"/>
 
-    <bean id="config" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
-        <property name="fileEncoding" value="UTF-8"/>
-        <property name="locations">
-            <list>
-                <value>classpath*:config.properties</value>
-            </list>
-        </property>
-    </bean>
+    <context:property-placeholder file-encoding="UTF-8" location="classpath*:config.properties"/>
+
 </beans>
